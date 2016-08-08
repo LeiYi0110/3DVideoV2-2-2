@@ -21,6 +21,7 @@
     a++;
     a++;
     a++;
+    a++;
 }
 
 - (void)didReceiveMemoryWarning {
