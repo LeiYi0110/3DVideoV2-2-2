@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view from its nib.
     int a = 0;
     a++;
+    a++;
 }
 
 - (void)didReceiveMemoryWarning {
