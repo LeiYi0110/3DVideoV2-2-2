@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoLocalCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="199"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Qq-Mt-etv">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="199"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="localVideoSmallSymbol" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-JM-87R">
+                        <rect key="frame" x="8" y="180" width="18" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Mzj-0R-Aij"/>
+                            <constraint firstAttribute="width" constant="18" id="X9F-TI-Dki"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8M1-zf-cc5">
+                        <rect key="frame" x="179" y="175" width="66" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="0d0-5q-9Qt"/>
+                            <constraint firstAttribute="height" constant="21" id="7mZ-cI-E2i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1Qq-Mt-etv" secondAttribute="bottom" id="4zP-tt-Y2s"/>
+                <constraint firstItem="5oU-JM-87R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="5Yh-jR-vlk"/>
+                <constraint firstAttribute="bottom" secondItem="5oU-JM-87R" secondAttribute="bottom" constant="8" id="Cg2-E5-g7I"/>
+                <constraint firstItem="1Qq-Mt-etv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="J4Y-UE-4co"/>
+                <constraint firstItem="1Qq-Mt-etv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TzH-BA-cAQ"/>
+                <constraint firstAttribute="trailing" secondItem="1Qq-Mt-etv" secondAttribute="trailing" id="V7j-Rs-s3W"/>
+                <constraint firstItem="1Qq-Mt-etv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eZC-1l-Ajd"/>
+                <constraint firstAttribute="trailing" secondItem="8M1-zf-cc5" secondAttribute="trailing" constant="5" id="qs6-Xo-U1C"/>
+                <constraint firstItem="1Qq-Mt-etv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="sVs-Qt-hhP"/>
+                <constraint firstAttribute="bottom" secondItem="8M1-zf-cc5" secondAttribute="bottom" constant="3" id="ze3-GB-i05"/>
+            </constraints>
+            <size key="customSize" width="250" height="199"/>
+            <connections>
+                <outlet property="labelTime" destination="8M1-zf-cc5" id="K7S-Og-loG"/>
+                <outlet property="locaoVideoImageView" destination="1Qq-Mt-etv" id="KVp-e5-P5e"/>
+            </connections>
+            <point key="canvasLocation" x="398" y="237.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="localVideoSmallSymbol" width="18" height="11"/>
+    </resources>
+</document>

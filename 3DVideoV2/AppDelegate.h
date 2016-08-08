@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BackgroundGetData.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, strong) BackgroundGetData *backgroundGetData;
 
 
 @end
